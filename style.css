@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.star {
+    width: 500px;
+    height: 500px;
+    background-color: black;
+}
+.border {
+    width: 10px;
+    height: 10px;
+    background-color: yellow;
+    transform: translate(250px, 250px);
+}
