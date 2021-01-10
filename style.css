@@ -14,15 +14,135 @@
     width: 500px;
     height: 500px;
     background-color: black;
+    position: relative;
 }
-.border {
+.border1 {
     width: 10px;
-    height: 10px;
+    height: 0;
     background-color: yellow;
-    transform: translate(250px, 250px);
-    animation: move 1.5s 1 both linear;
+    /* transform: translate(250px, 250px); */
+    /* animation: move 1.5s 1 both linear; */
+    position: absolute;
+    top: 0;
+    left: 250px;
 }
- @keyframes move { 
+.border2 {
+    width: 10px;
+    height: 0;
+    background-color: red;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.border3 {
+    width: 10px;
+    height: 0;
+    background-color: blue;
+    position: absolute;
+    top: 210px;
+    right: -10px;
+}
+.border4 {
+    width: 10px;
+    height: 0;
+    background-color: green;
+    position: absolute;
+    top: 220px;
+    left: 0;
+}
+.border5 {
+    width: 10px;
+    height: 0;
+    background-color: purple;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.star:hover .border1{
+    transform-origin: top left;
+    transform: rotate(26deg);
+    height: 550px;
+   border-radius: 50px;
+   transition: 1s;
+   animation: bording1 1s;
+
+}
+.star:hover .border2{
+    transform-origin: bottom left;
+    transform: rotate(60deg);
+    width: 10px;
+    height: 570px;
+   border-radius: 50px;
+   transition: 1s 1s;
+   animation: bording2 1s;
+
+}
+.star:hover .border3{
+     transform-origin: top left;
+    transform: rotate(90deg); 
+    width: 10px;
+    height: 500px;
+   border-radius: 50px;
+   transition: 1s 2s;
+   animation: bording3 1s;
+
+}
+.star:hover .border4{
+    transform-origin: top left;
+   transform: rotate(-60deg); 
+   width: 10px;
+   height: 570px;
+   border-radius: 50px;
+   transition: 1s 3s;
+   animation: bording4 1s;
+}
+.star:hover .border5{
+    transform-origin: bottom right;
+   transform: rotate(-26deg); 
+   width: 10px;
+   height: 550px;
+   border-radius: 50px;
+   transition: 1s 4s;
+   animation: bording5 1s;
+}
+@keyframes bording1 {
+    0% {
+        transform-origin: top left;
+        transform: rotate(26deg);
+    }
+}
+@keyframes bording2 {
+    0% {
+        transform-origin: bottom left;
+        transform: rotate(60deg);
+    }
+}
+@keyframes bording3 {
+    0% {
+        transform-origin: top left;
+        transform: rotate(90deg); 
+    }
+}
+@keyframes bording4 {
+    0% {
+        transform-origin: top left;
+        transform: rotate(-60deg); 
+    }
+}
+@keyframes bording5 {
+    0% {
+        transform-origin: bottom right;
+        transform: rotate(-26deg); 
+    }
+}
+/* .border::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+} */
+ /* @keyframes move { 
     0% {
         transform: translate(250px, 0);
     }
@@ -46,4 +166,4 @@
         transform: translate(250px, 0);
 
     }
-} 
+}  */
