@@ -1,6 +1,8 @@
 # DrawingStar
  별 그리는 애니메이션을 만들어 봤습니다.
 
+![drawingstar](https://user-images.githubusercontent.com/61913417/104126825-2aa20280-53a2-11eb-8341-b3cd668d59cb.gif)
+
 css animation을 이용해 별을 그려보았어요!
 
 특정 영역에 마우스를 올려 놓으면 그려지는 형식으로 만들어 보았습니다
