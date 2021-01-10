@@ -20,4 +20,30 @@
     height: 10px;
     background-color: yellow;
     transform: translate(250px, 250px);
+    animation: move 1.5s 1 both linear;
 }
+ @keyframes move { 
+    0% {
+        transform: translate(250px, 0);
+    }
+    20% {
+        transform: translate(0, 500px);
+
+    }
+    40% {
+        transform: translate(500px, 250px);
+
+    }
+    60% {
+        transform: translate(0, 250px);
+
+    }
+    80% {
+        transform: translate(500px, 500px);
+
+    }
+    100% {
+        transform: translate(250px, 0);
+
+    }
+} 
